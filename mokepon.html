@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+        <title>MOKEPON</title>
+        <script src="./mokeponjs/script.js" defer ></script>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+
+        <section class="predeterminado" id="inicio">
+            <h1 class="title" id="titulo-principal">MOKEPON</h1>  
+            <button class="botones-principales" id="boton-iniciar">Iniciar</button>
+        </section>
+
+        <section class="predeterminado" id="seleccionar_mascotas">
+            <h1 class="title">MOKEPON</h1>
+            
+            <h2 class="subtitulo">Elige a tu mascota</h2>
+
+            <div class="tarjetas">    
+                <label class="tarjeta-mokepon" id="tarjeta-mokepon-aguataque" for="mascota1">
+                    <img class="img-mokepon-primero" src="./Assets/Aguataque.png" alt="Aguataque">
+                    <p>Aguataque</p>
+                </label>
+                <input type="radio" name="mascotas" id="mascota1"/>
+
+                <label class="tarjeta-mokepon" id="tarjeta-mokepon-camenta" for="mascota2">
+                    <img class="img-mokepon-primero" src="./Assets/Camenta.png" alt="Camenta">
+                    <p>Camenta</p>
+                </label>
+                <input type="radio" name="mascotas" id="mascota2"/>
+
+                <label class="tarjeta-mokepon" id="tarjeta-mokepon-rastor" for="mascota3">
+                    <img class="img-mokepon-segundo" src="./Assets/Rastor.png" alt="Rastor">
+                    <p>Rastor</p>
+                </label>
+                <input type="radio" name="mascotas" id="mascota3"/>
+
+                <label class="tarjeta-mokepon" id="tarjeta-mokepon-volen" for="mascota4">
+                    <img class="img-mokepon-segundo" src="./Assets/Volen.png" alt="Volen">
+                    <p>Volen</p>
+                </label>
+                <input type="radio" name="mascotas" id="mascota4"/>
+
+                <label class="tarjeta-mokepon" id="tarjeta-mokepon-manyelo" for="mascota5">
+                    <img class="img-mokepon-segundo" src="./Assets/Manyelo.png" alt="Manyelo">
+                    <p>Manyelo</p>
+                </label> 
+                <input type="radio" name="mascotas" id="mascota5"/> 
+            </div>
+
+            <button class="botones-principales" id="boton-mascotas">Seleccionar</button>
+        </section>
+        <section id="seleccionar_ataque">
+            <h2 class="subtitulo">Selecciona tu ataque</h2>
+
+            <div id="botones-de-ataques">
+                <button class="boton-ataque" id="boton-fuego">Fire</button>
+                <button class="boton-ataque" id="boton-agua">Water</button>
+                <button class="boton-ataque" id="boton-tierra">Earth</button>
+                <button class="boton-ataque" id="boton-aire">Air</button>
+                <button class="boton-ataque" id="boton-hielo">Ice</button>
+            </div>
+            <div class="contenedor-versus">
+                <div class="tarjeta-escogida" id="mascota-usuario">
+                    <img class="mascotas-escogidas" id="mascota-escogida" src="" alt="">
+                </div>
+                <p>VS</p>
+                <div class="tarjeta-escogida">
+                    <img class="mascotas-escogidas" id="mascota-escogida-enemigo" src="" alt="">
+                </div>
+            </div>
+            <div class="contenedor-ataques">
+                <div class="ataques">
+                    <div class="ataques-hijo">
+                        <p id="vidas-jugador">3</p> 
+                        <strong><p id="mascotaJugador"></p></strong>
+                        <div id="ataquesJugador"></div>
+                    </div>
+                    <div class="division"></div>
+                    <div id="mensajes">
+                        <p id="resultado">SUERTE!!</p>
+                        <div id="reiniciar">
+                            <button id="boton-reiniciar">Volver a Jugar</button>
+                        </div>   
+                    </div>
+                    <div class="ataques-hijo">
+                        <p id="vidas-enemigo">3</p>
+                        <p id="mascotaEnemigo"></p>
+                        <div id="ataquesDelEnemigo"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
